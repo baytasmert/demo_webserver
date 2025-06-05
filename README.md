@@ -78,6 +78,20 @@ docker run -p 8080:81 my-http-server
 * Docker
 
 ---
+## 📚 Proje Dosyaları ve Dokümantasyon
+
+- **[LICENSE](LICENSE)**  
+  Projenin MIT lisansı altında olduğunu ve kullanım şartlarını belirtir.
+
+- **[CONTRIBUTING.md](CONTRIBUTING.md)**  
+  Projeye katkıda bulunmak için izlemeniz gereken rehber.
+
+- **[NOTICE.md](NOTICE.md)**  
+  Kullanıcıların ve katılımcıların lisans koşullarıyla ilgili uyarılar ve bildirimler.
+
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**  
+  Projedeki katılımcıların uyması gereken davranış kurallarını içerir.
+---
 ## 🧑‍💻 Geliştiren
 
 * Mert Baytaş
