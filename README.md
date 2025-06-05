@@ -54,12 +54,28 @@ python server.py
 Sunucu [http://localhost:81](http://localhost:81) adresinde çalışır.
 
 ### 2. Docker ile çalıştırmak için:
+🔗 Docker Hub Image Linki
+
+https://hub.docker.com/r/mertbaytas/demo_webserver
+
+🐋 Container Açıklaması
+
+Proje, oluşturduğum Dockerfile kullanılarak container haline getirilmiştir. Sunucu container içinde 81 portunu dinler ve 8080 portu üzerinden dış dünyaya hizmet verir.
 
 ```bash
-docker build -t my-http-server .
-docker run -p 8080:81 my-http-server
+
+docker pull mertbaytas/demo_webserver
+docker run -d -p 8080:81 mertbaytas/demo_webserver
 ```
 
+🐳 Docker Compose (Opsiyonel)
+
+Ayrıca Docker Compose desteği eklenmiştir:
+
+```bash
+
+docker-compose up -d
+```
 ---
 ## 🌐 Kullanım Örnekleri
 
