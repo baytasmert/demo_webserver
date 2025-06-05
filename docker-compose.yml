@@ -1,0 +1,18 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: demo_webserver:latest
+    container_name: demo_webserver_container
+    ports:
+      - "8080:81"
+    restart: unless-stopped
+    # Eğer ileride bir .env dosyası kullanacaksanız:
+    # env_file:
+    #   - .env
+    volumes:
+      - ./server.log:/app/server.log

@@ -1,0 +1,91 @@
+/* Temel reset ve font ayarları */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Sayfa gövdesi */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Ana konteyner */
+.container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Form elemanları */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input alanları ortak stil */
+input[type="text"] {
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+/* Inputlara odaklanıldığında border rengi */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+/* Buton stil */
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Mesaj kutusu (greet cevabı) */
+#greetMessage {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e9f7ef;
+  border: 1px solid #28a745;
+  color: #155724;
+  border-radius: 4px;
+  display: none; /* Başlangıçta gizli */
+}
+
+/* Basit mobil uyum */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 20px;
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>{{content}}</h1>
+    <form action="/api/greet" method="post" id="greetForm">
+      <input type="text" name="name" placeholder="İsim">
+      <input type="text" name="surname" placeholder="Soyisim">
+      <button type="submit">Gönder</button>
+    </form>
+    <!-- Cevap mesajı buraya basılacak -->
+    <div id="greetMessage"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
